@@ -1,0 +1,42 @@
+.Contact {
+    height: $Height;
+    width: $width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 3rem;
+
+    .fas {
+        font-size: 2rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font-color;
+        transition: all .5s ease-out;
+
+        &:hover {
+            border-bottom: 1px solid $color2;
+            color: $color2;
+        }
+    }
+
+}
+
+@media only screen and (min-width: $Mobile) {
+    .Contact {
+
+        .fas {
+            font-size: 1.5rem;
+            padding: 1rem 1.5rem;
+        }
+    }
+}

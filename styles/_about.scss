@@ -1,0 +1,51 @@
+.About {
+    height: $Height;
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        padding: 1rem;
+    }
+
+    p {
+        word-spacing: .2rem;
+        line-height: 2em;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: $Mobile) {
+    .About {
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            padding: 1rem 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: $Mobile) {
+    .About {
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $Laptop) {
+    .About {
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+}

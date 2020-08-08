@@ -1,0 +1,126 @@
+.header {
+    padding: 3rem;
+    width: 100%;
+    height: $Height;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem;
+
+        a {
+            text-decoration: none;
+            color: $font-color;
+        }
+
+        li {
+            font-size: 1.1rem;
+            padding: .5rem 1rem;
+            margin: 1rem 2rem;
+            transition: all .4s ease;
+
+            &:hover {
+                color: $color2;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .social {
+        width: $width;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $font-color;
+            margin: 1rem;
+
+            .fab,
+            .fas {
+                transition: all .4s ease;
+                padding: 1rem 1.2rem;
+                font-size: 1.5rem;
+
+                &:hover {
+                    color: $color2;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $Mobile) {
+    .header {
+        margin: 0 auto;
+
+        h1 {
+            font-size: 1.2rem;
+            padding: 1rem 1rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            line-height: .5rem;
+        }
+
+    }
+}
+
+@media only screen and (min-width: $Mobile) {
+    .header {
+        margin: 0 auto;
+
+        h1 {
+            font-size: 1.2rem;
+            padding: 1rem .2rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            line-height: .5rem;
+        }
+
+    }
+}
+
+@media only screen and (min-width: $Tablet) {
+    .header {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            flex-direction: column;
+
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $Laptop) {
+    .header {
+        padding: 0 2rem;
+        margin: 0 auto;
+
+
+    }
+}

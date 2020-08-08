@@ -1,0 +1,66 @@
+.Skills {
+    height: $Height;
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        padding: 1rem 2rem;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 3rem;
+        font-size: 3rem;
+
+        .fab {
+            margin: 1rem 1.5rem;
+            padding: .5rem 1rem;
+            transition: all .4s ease;
+
+            &:hover {
+                color: $color2;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $Laptop) {
+    .Skills {
+        padding: 0 2rem;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: $Mobile) {
+    .Skills {
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        .icons {
+            .fab {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $Mobile) {
+    .Skills {
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        .icons {
+            .fab {
+                font-size: 2rem;
+            }
+        }
+    }
+}

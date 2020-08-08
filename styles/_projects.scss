@@ -1,0 +1,109 @@
+.Projects {
+    height: $Height;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        margin: 1rem 2rem;
+    }
+
+    .project-section {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $font-color;
+
+            img {
+                transition: all .4s ease;
+                max-width: 320px;
+                max-height: 250px;
+
+                &:hover {
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $Mobile) {
+    .Projects {
+        h1 {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+
+            a {
+                img {
+                    max-width: 210px;
+                    max-height: 170px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $Mobile) {
+    .Projects {
+        h1 {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+        }
+
+        .project-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+
+            a {
+                img {
+                    max-width: 200px;
+                    max-height: 170px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $Laptop) {
+    .Projects {
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        .project-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+
+            a {
+                img {
+                    max-width: 350px;
+                    max-height: 270px;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: $Tablet) {
+    .Projects {
+        .project-section {
+            grid-template-columns: repeat(3, 1fr);
+
+            a {
+                img {
+                    max-width: 250px;
+                    max-height: 270px;
+                }
+            }
+        }
+    }
+}
